@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nova Digital | Inicio</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="js/script.js" defer></script>
+    </head>
+
+    <body>
+
+        <div id="pantallaError" class="pantalla-error">
+            <div>
+                <p>ERROR 404</p>
+                <h1>¿Dónde estamos?</h1>
+                <p>Nuestra señal desapareció, pero estamos listos para volver.</p>
+                <button id="recuperar">Recuperar página</button>
+            </div>
+        </div>
+
+
+        <header>
+            <a class="logo" href="index.html">NOVA<span>.</span></a>
+            <button id="menuBoton" class="menu-boton">☰</button>
+            <nav id="menu">
+                <a href="index.html">Inicio</a>
+                <a href="historia.html">Historia</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+                <button id="modoOscuro">Cambiar modo</button>
+            </nav>
+        </header>
+
+
+        <main>
+            <section class="portada">
+                <p class="etiqueta">EMPRESA DOMINICANA </p>
+                <h1>No desaparecimos.<br><span>Evolucionamos.</span></h1>
+                <p>Una noche nuestra presencia digital desaparecio. Hoy regresamos con una nueva imagen, mejores servicios y mas preparación para el futuro.</p>
+                <a class="boton" href="servicios.html">Conoce nuestros servicios</a>
+            </section>
+            <section class="contenido">
+                <h2>Volvemos mas fuertes</h2>
+                <p>Somos Nova Digital, una empresa ficticia que convirtio un problema en una oportunidad para mejorar.</p>
+                <div class="tarjetas">
+                    <article>
+                        <h3>Nueva imagen</h3>
+                        <p>Un diseño moderno para destacar.</p>
+                    </article>
+                    <article>
+                        <h3>Más seguridad</h3>
+                        <p>Respaldos y buenas practicas para proteger la informacion.</p>
+                    </article>
+                    <article>
+                        <h3>Mas conexion</h3>
+                        <p>Nuevas formas de comunicarnos con nuestros clientes.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>Nova Digital</footer>
+
+
+
+<button id="chatAbrir" class="chat-abrir">Asistente virtual</button>
+
+<section id="chat" class="chat" hidden>
+
+
+    <div class="chat-titulo"><b>Asistente Nova</b><button id="chatCerrar">×</button></div>
+
+    <div id="chatMensajes"><p>¡Hola! Preguntame por nuestros servicios, historia o contacto.</p>
+
+    </div><form id="chatFormulario">
+
+        <label class="solo-lector" for="chatTexto">Tu pregunta</label>
+
+        <input id="chatTexto" placeholder="Escribe una pregunta..." required>
+
+        <button>Enviar</button></form></section>
+
+        <p id="aviso" class="aviso" role="status"></p>
+
+    </body>
+
+        </html>

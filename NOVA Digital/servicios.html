@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Servicios | Nova Digital</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="index.html">NOVA<span>.</span></a>
+            <button id="menuBoton" class="menu-boton">☰</button>
+            <nav id="menu">
+                <a href="index.html">Inicio</a>
+                <a href="historia.html">Historia</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+                <button id="modoOscuro">Cambiar modo</button>
+            </nav>
+        </header>
+        <main>
+            <section class="titulo-pagina">
+                <p class="etiqueta">NUESTROS SERVICIOS</p>
+                <h1>Una nueva forma<br>de <span>conectarnos.</span></h1>
+                <p>Ayudamos a los negocios a mejorar su imagen digital y prepararse ante problemas.</p>
+            </section>
+            <section class="contenido">
+                <div class="tarjetas">
+                    <article>
+                        <h2>Diseño web</h2>
+                        <p>Páginas modernas que se adaptan a celulares y computadoras.</p>
+                    </article>
+                    <article>
+                        <h2>Seguridad digital</h2>
+                        <p>Consejos para proteger cuentas, contraseñas y archivos.</p>
+                    </article>
+                    <article>
+                        <h2>Identidad de marca</h2>
+                        <p>Diseño y contenido para que los clientes reconozcan tu negocio.</p>
+                    </article>
+                </div>
+                <h2>¿Cómo nos preparamos?</h2>
+                <p>Hacemos copias de respaldo, recomendamos contraseñas seguras y verificación en dos pasos. También preparamos un plan para recuperar la página y avisar a los clientes.</p>
+                <a class="boton" href="contacto.html">Contáctanos</a>
+            </section>
+        </main>
+        <footer>Nova Digital · Proyecto académico ficticio · República Dominicana</footer>
+        <button id="chatAbrir" class="chat-abrir">Asistente virtual</button>
+        <section id="chat" class="chat" hidden="">
+            <div class="chat-titulo">
+                <b>Asistente Nova</b>
+                <button id="chatCerrar" class="chat-cerrar">×</button>
+            </div>
+            <div id="chatMensajes">
+                <p>¡Hola! Pregúntame por nuestros servicios, historia o contacto.</p>
+
+            </div>
+            <form id="chatFormulario">
+                <label class="solo-lector" for="chatTexto">Tu pregunta</label>
+                <input id="chatTexto" placeholder="Escribe una pregunta..." required>
+                <button>Enviar</button>
+            </form>
+        </section>
+        <p id="aviso" class="aviso" role="status"></p>
+    </body>
+        </html>

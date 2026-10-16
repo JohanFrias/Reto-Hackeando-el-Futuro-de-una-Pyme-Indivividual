@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Historia | Nova Digital</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="js/script.js" defer></script>
+    </head>
+
+
+    <body>
+
+        <header>
+            <a class="logo" href="index.html">NOVA<span>.</span></a>
+            <button id="menuBoton" class="menu-boton">☰</button>
+            <nav id="menu">
+                <a href="index.html">Inicio</a>
+                <a href="historia.html">Historia</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+                <button id="modoOscuro">Cambiar modo</button>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <section class="titulo-pagina">
+                <p class="etiqueta">EL MISTERIO</p>
+                <h1>La noche en que<br><span>desaparecimos.</span></h1>
+                <p>Nuestra página y redes dejaron de estar disponibles. No sabíamos qué había ocurrido, pero decidimos empezar de nuevo.</p>
+            </section>
+            <section class="contenido">
+                <h2>¿Qué pasó?</h2>
+                <div class="evento">
+                    <b>23:48 — La página cayo</b>
+                    <p>Los clientes ya no podían entrar a nuestra web.</p>
+                </div>
+                <div class="evento">
+                    <b>00:17 — Redes desaparecidas</b>
+                    <p>Nuestros perfiles dejaron de aparecer en Internet.</p>
+                </div>
+                <div class="evento">
+                    <b>Al día siguiente — Recuperación</b>
+                    <p>Decidimos reconstruir la página y mejorar la seguridad.</p>
+                </div>
+                <div class="evento">
+                    <b>Hoy — Estamos de regreso</b>
+                    <p>Regresamos con una nueva identidad y un plan para prevenir futuros problemas.</p>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>Nova Digital</footer>
+        
+
+
+        <button id="chatAbrir" class="chat-abrir">Asistente virtual</button>
+        <section id="chat" class="chat" hidden="">
+            <div class="chat-titulo">
+                <b>Asistente Nova</b>
+                <button id="chatCerrar" class="chat-cerrar">×</button>
+            </div>
+            <div id="chatMensajes">
+                <p>¡Hola! Pregúntame por nuestros servicios, historia o contacto.</p>
+
+            </div>
+
+            <form id="chatFormulario">
+                <label class="solo-lector" for="chatTexto">Tu pregunta</label>
+                <input id="chatTexto" placeholder="Escribe una pregunta..." required>
+                <button>Enviar</button>
+            </form>
+        </section>
+        <p id="aviso" class="aviso" role="status"></p>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+ pulsa la tecla N tres veces seguidas.

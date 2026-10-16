@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contacto | Nova Digital</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="js/script.js" defer></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <a class="logo" href="index.html">NOVA<span>.</span></a>
+            <button id="menuBoton" class="menu-boton">☰</button>
+            <nav id="menu">
+                <a href="index.html">Inicio</a>
+                <a href="historia.html">Historia</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+                <button id="modoOscuro">Cambiar modo</button>
+            </nav>
+        </header>
+
+
+        <main>
+            <section class="titulo-pagina">
+                <p class="etiqueta">CONTACTO Y EVIDENCIAS</p>
+                <h1>Volvamos a<br><span>conectarnos.</span></h1>
+                <p>Envíanos una consulta o revisa las pruebas ficticias de nuestra historia.</p>
+            </section>
+
+            <section class="contenido contacto">
+                <div>
+                    <h2>Escríbenos</h2>
+                    <form id="formContacto">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" required minlength="2" placeholder="Tu nombre">
+                        <label for="correo">Correo electrónico</label>
+                        <input id="correo" type="email" required placeholder="tu@correo.com">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" rows="4" required minlength="5" placeholder="¿En qué podemos ayudarte?"></textarea>
+                        <button class="boton">Enviar mensaje</button>
+                        <p id="respuestaFormulario" class="nota" role="status"></p>
+                    </form>
+                </div>
+
+                <div>
+                    <h2>Pruebas del incidente</h2>
+                    <div class="evento">
+                        <b>Prueba 1: Error de página</b>
+                        <p>La página dejó de estar disponible.</p>
+                        <button class="ver-prueba" data-prueba="Esta es una representación ficticia de un error 404.">Ver prueba</button>
+                    </div>
+                    <div class="evento">
+                        <b>Prueba 2: Redes sociales</b>
+                        <p>Los perfiles dejaron de aparecer en las búsquedas.</p>
+                        <button class="ver-prueba" data-prueba="Registro simulado: los perfiles no estaban disponibles.">Ver prueba</button>
+                    </div>
+                    <div class="evento">
+                        <b>Prueba 3: Recuperación</b>
+                        <p>Se crea un plan para volver a estar en línea.</p>
+                        <button class="ver-prueba" data-prueba="Plan: recuperar respaldos, cambiar contraseñas y activar verificación en dos pasos.">Ver prueba</button>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+
+        <footer>Nova Digital</footer>
+        <button id="chatAbrir" class="chat-abrir">Asistente virtual</button>
+        <section id="chat" class="chat" hidden>
+            <div class="chat-titulo">
+                <b>Asistente Nova</b>
+                <button id="chatCerrar" class="chat-cerrar">×</button>
+            </div>
+            <div id="chatMensajes">
+                <p>¡Hola! Pregúntame por nuestros servicios, historia o contacto.</p>
+            </div>
+            <form id="chatFormulario">
+                <label class="solo-lector" for="chatTexto">Tu pregunta</label>
+                <input id="chatTexto" placeholder="Escribe una pregunta..." required>
+                <button>Enviar</button>
+            </form>
+        </section>
+        <p id="aviso" class="aviso" role="status"></p>
+    </body>
+</html>
