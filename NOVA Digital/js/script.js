@@ -1,4 +1,3 @@
-
          /* Script principal */
 document.addEventListener("DOMContentLoaded", function () {
     const pantalla = document.getElementById("pantallaError");
@@ -28,12 +27,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    /* Menú de navegación */
+
     const menuBoton = document.getElementById("menuBoton");
     const menu = document.getElementById("menu");
 
     if (menuBoton && menu) {
         menuBoton.addEventListener("click", () => menu.classList.toggle("abierto"));
     }
+
+    /*chat*/
 
     const chat = document.getElementById("chat");
     const abrir = document.getElementById("chatAbrir");
@@ -111,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
   
-
+/* Función para caracteres especiales en HTML */
 function escapar(s) {
     return s.replace(/[&<>"']/g, (c) => ({
         "&": "&amp;",
@@ -122,6 +125,7 @@ function escapar(s) {
     }[c]));
 }
 
+/* Función para mostrar avisos temporales */
 let avisoTimer;
 
 function mostrarAviso(texto) {
